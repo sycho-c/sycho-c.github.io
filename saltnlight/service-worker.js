@@ -105,7 +105,7 @@ self.addEventListener('push', (event) => {
     if (!event.data) return;
     
     const notification = event.data.json();
-    const title = notification.title || 'Salt & Light';
+    const title = notification.title || 'saltnlight';
     const options = {
         body: notification.body || '새로운 알림이 있습니다.',
         icon: '/assets/icons/icon-192x192.png',

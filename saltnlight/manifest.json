@@ -1,6 +1,6 @@
 {
-    "name": "Salt & Light",
-    "short_name": "SaltNLight",
+    "name": "saltnlight",
+    "short_name": "saltnlight",
     "description": "소모임을 위한 기독교 관련 자료 공유 앱",
     "start_url": "/",
     "display": "standalone",
@@ -112,4 +112,4 @@
     "related_applications": [],
     "iarc_rating_id": "",
     "scope": "/"
-} 
+}
