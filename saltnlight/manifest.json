@@ -2,7 +2,7 @@
     "name": "saltnlight",
     "short_name": "saltnlight",
     "description": "소모임을 위한 기독교 관련 자료 공유 앱",
-    "start_url": "/",
+    "start_url": "/saltnlight",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#3f51b5",
