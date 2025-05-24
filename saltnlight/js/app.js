@@ -4,7 +4,7 @@ let deferredPrompt;
 const resourcesData = [
     {
         title: '생각의 전쟁과 전신갑주',
-        url: 'https://docs.google.com/document/d/1oPrK1ed97yHR7qn6eeeNFqYlNPw_Ybd__Mq2TCEyLR4/edit?usp=sharing',
+        url: './data/1',
     }
 ];
 // 앱 초기화
