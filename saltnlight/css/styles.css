@@ -84,6 +84,11 @@ main {
     gap: 1rem;
 }
 
+.resources a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .resource-item {
     background-color: var(--card-bg-color);
     border-radius: 8px;
