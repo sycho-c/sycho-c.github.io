@@ -7,11 +7,12 @@ const resourcesData = [
         url: './data/1',
     }
 ];
+
 // 앱 초기화
 function initApp() {
     // 데이터 로드 및 표시
     displayResources(resourcesData);
-    
+
     // PWA 설치 이벤트 리스너
     setupPWAInstall();
 }
@@ -19,19 +20,16 @@ function initApp() {
 // 자원 목록 표시
 function displayResources(resources) {
     const resourcesContainer = document.querySelector('.resources');
-    
+
     // 정적 HTML에 이미 예시 항목이 있으면 지웁니다
     resourcesContainer.innerHTML = '';
-    
+
     resources.forEach(resource => {
-        const resourceItem = document.createElement('div');
+        const resourceItem = document.createElement('a');
+        resourceItem.href = resource.url;
+        resourceItem.target = '_blank';
         resourceItem.classList.add('resource-item');
-        resourceItem.setAttribute('data-id', resource.id);
-        
-        resourceItem.innerHTML = `
-            <h3><a href="${resource.url}" target="_blank">${resource.title}</a></h3>
-        `;
-        
+        resourceItem.innerHTML = `<div><h3>${resource.title}</h3></div> `;
         resourcesContainer.appendChild(resourceItem);
     });
 }
@@ -61,4 +59,4 @@ function setupPWAInstall() {
 }
 
 // 앱 초기화 실행
-document.addEventListener('DOMContentLoaded', initApp); 
+document.addEventListener('DOMContentLoaded', initApp);
